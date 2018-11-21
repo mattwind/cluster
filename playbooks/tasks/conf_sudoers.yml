@@ -1,5 +1,5 @@
 ---
-- name: Adding user admin
+- name: Adding user admin to sudoers
   become: true
   become_method: su
   user: name=admin

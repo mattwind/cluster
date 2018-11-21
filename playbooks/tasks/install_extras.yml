@@ -1,7 +1,7 @@
 ---
 - name: Install Extra Packages
   become: yes
-  become_method: sudo
+  become_method: su
   yum: 
     name:
       - git

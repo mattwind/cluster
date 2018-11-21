@@ -1,13 +1,13 @@
 ---
-- name: Update Network
+- name: Update Network Config
   become: true
-  become_method: sudo
+  become_method: su
   copy:
     src: ../configs/ifcfg-eth0
     dest: /etc/sysconfig/network-scripts/ifcfg-eth0
-- name: Change IP
+- name: Change Eth0 IP Address
   become: true
-  become_method: sudo
+  become_method: su
   lineinfile:
     regexp: '^IPADDR='
     line: "IPADDR={{ new_ip }}"
