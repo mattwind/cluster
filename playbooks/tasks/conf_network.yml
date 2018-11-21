@@ -10,6 +10,6 @@
   become_method: sudo
   lineinfile:
     regexp: '^IPADDR='
-    line: "IPADDR={{ ip }}"
+    line: "IPADDR={{ new_ip }}"
     state: present
     dest: /etc/sysconfig/network-scripts/ifcfg-eth0
