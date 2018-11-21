@@ -53,7 +53,7 @@ You will want to specify the ansible host defined in your inventory and the new 
 
 `ansible-playbook node1 playbooks/setup_node.yml --extra-vars "new_ip=172.16.0.200" --ask-become-pass`
 
-This command will configure everything automatically. Update your local .ssh/config if you change the ip address. 
+This command will configure everything automatically. Update your local `~/.ssh/config` if you change the ip address. 
 
 ## Update node
 
