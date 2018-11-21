@@ -8,3 +8,4 @@
       - sshpass
       - htop
       - parallel
+      - bzip2
