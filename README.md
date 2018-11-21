@@ -16,6 +16,8 @@ Add info to your local ssh config.
 
 `vi ~/.ssh/config`
 
+Update your Ansible inventory.
+
 Specify the ansible host defined in your inventory and set the new ip you want the node to be.
 
 `ansible-playbook --limit "node1" playbooks/setup_node.yml --extra-vars "new_ip=172.16.0.200" --ask-become-pass`
