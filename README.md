@@ -51,7 +51,7 @@ After I build an new server and install the base system, I get a dhcp address th
 
 You will want to specify the ansible host defined in your inventory and the new ip to configure.
 
-`ansible-playbook node1 playbooks/setup_node.yml --extra-vars "new_ip=172.16.0.200" --ask-become-pass`
+`ansible-playbook --limit "node1" playbooks/setup_node.yml --extra-vars "new_ip=172.16.0.200" --ask-become-pass`
 
 This command will configure everything automatically. Update your local `~/.ssh/config` if you change the ip address. 
 
