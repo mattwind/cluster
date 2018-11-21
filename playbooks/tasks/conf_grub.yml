@@ -1,0 +1,13 @@
+---
+- name: Update Grub
+  become: true
+  become_method: sudo
+  lineinfile:
+    regexp: '^GRUB_CMDLINE_LINUX='
+    line: 'GRUB_CMDLINE_LINUX="crashkernel=auto rd.lvm.lv=centos/root rd.lvm.lv=centos/swap rhgb quiet net.ifnames=0 biosdevname=0 reboot=a,e,p,t"'
+    state: present
+    dest: /etc/default/grub
+- name: Generate Config
+  become: true
+  become_method: sudo
+  shell: grub2-mkconfig -o /boot/grub2/grub.cfg 

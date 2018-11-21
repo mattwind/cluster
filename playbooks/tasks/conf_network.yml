@@ -1,0 +1,15 @@
+---
+- name: Update Network
+  become: true
+  become_method: sudo
+  copy:
+    src: ../configs/ifcfg-eth0
+    dest: /etc/sysconfig/network-scripts/ifcfg-eth0
+- name: Change IP
+  become: true
+  become_method: sudo
+  lineinfile:
+    regexp: '^IPADDR='
+    line: "IPADDR={{ ip }}"
+    state: present
+    dest: /etc/sysconfig/network-scripts/ifcfg-eth0

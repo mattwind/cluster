@@ -1,0 +1,9 @@
+---
+- name: Adding user admin
+  become: true
+  become_method: su
+  user: name=admin
+        group=admin
+        shell=/bin/bash
+        groups=wheel
+        append=yes

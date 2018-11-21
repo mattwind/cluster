@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+    - include: tasks/install_epel.yml
+    - include: tasks/install_extras.yml
+    - include: tasks/conf_grub.yml
+    - include: tasks/conf_network.yml
+    - include: tasks/conf_sudoers.yml

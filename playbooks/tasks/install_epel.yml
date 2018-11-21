@@ -1,0 +1,7 @@
+---
+- name: Install Extra EPEL Repo
+  become: yes
+  become_method: sudo
+  yum:
+    name: epel-release
+    state: latest
