@@ -12,17 +12,15 @@ Copy node ssh key to your node.
 
 `ssh-copy-id -i ./id_rsa admin@172.16.0.174`
 
-Add info to your local ssh config.
+Add dhcp ip to your local ssh config.
 
 `vi ~/.ssh/config`
 
-Update your Ansible inventory.
-
-Specify the ansible host defined in your inventory and set the new ip you want the node to be.
+Update your ansible inventory and setup new node.
 
 `ansible-playbook --limit "node1" playbooks/setup_node.yml --extra-vars "new_ip=172.16.0.200" --ask-become-pass`
 
-Update your local `~/.ssh/config` if you change the ip address. 
+Update your local `~/.ssh/config` to new static ip address. 
 
 ## Update nodes
 
