@@ -8,19 +8,19 @@ View the docs folder for more information on setting up ansible and ssh keys.
 
 ## Setup New Node
 
-Copy key to the new node.
+Copy the ssh key.
 
 `ssh-copy-id -i ./id_rsa admin@172.16.0.174`
 
-Add dhcp ip to your local ssh config.
+Add dhcp address to ssh config.
 
 `vi ~/.ssh/config`
 
-Update your ansible inventory and setup new node.
+Update your ansible inventory and run playbook.
 
 `ansible-playbook --limit "node1" playbooks/setup_node.yml --extra-vars "new_ip=172.16.0.200" --ask-become-pass`
 
-Update your local `~/.ssh/config` to new static ip address. 
+Update local `~/.ssh/config` to new static ip address. 
 
 ## Updating Nodes
 
