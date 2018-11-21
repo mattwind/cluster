@@ -1,14 +1,14 @@
 
-# Automate parallel nodes
+# Automate Parallel Nodes
 
 My notes on setting up a network with ansible for parallel computing. I use Debian locally and setup a bunch of Centos 7.5 nodes.
 After I build an new node and install the base system, I get a dhcp address then I run a playbook from my local machine using Ansible.
 
 View the docs folder for more information on setting up ansible and ssh keys.
 
-## Prepare a new node
+## Setup New Node
 
-Copy node ssh key to your node.
+Copy key to the new node.
 
 `ssh-copy-id -i ./id_rsa admin@172.16.0.174`
 
@@ -22,7 +22,7 @@ Update your ansible inventory and setup new node.
 
 Update your local `~/.ssh/config` to new static ip address. 
 
-## Update nodes
+## Updating Nodes
 
 Ocassionaly you want to update your nodes
 
