@@ -5,7 +5,7 @@
 
 ## Setup SSH Login File
 
-Check `~/.parallel/sshloginfile` and make sure to have the same hostnames as ansible and `.ssh/config`
+Edit `~/.parallel/sshloginfile` for continuity keep the same hostnames as `/etc/ansible/hosts` and `.ssh/config`
 
 ## Distributed command
 
