@@ -1,3 +1,11 @@
+# This is the default ssh 'hosts' file.
+#
+# It should live in ~/.ssh/config
+#
+#   - Comments begin with the '#' character
+#   - Blank lines are ignored
+#   - You can enter hostnames or ip addresses
+
 Host node00
   Hostname 172.16.0.200
   User admin
