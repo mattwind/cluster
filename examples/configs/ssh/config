@@ -1,0 +1,9 @@
+Host node00
+  Hostname 172.16.0.200
+  User admin
+  IdentityFile "/home/mwind/.ssh/cluster/id_rsa"
+
+Host node01
+  Hostname 172.16.0.201
+  User admin
+  IdentityFile "/home/mwind/.ssh/cluster/id_rsa"
