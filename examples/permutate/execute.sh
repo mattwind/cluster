@@ -18,7 +18,7 @@ echo $STRING > $TMP/tmp
 
 split --numeric-suffixes --number=$NODES $TMP/tmp ./tmp/$PREFIX
 
-# Deployt to nodes
+# Deploy to nodes
 
 ansible-playbook --limit "$HOSTS" ./playbooks/deploy.yml
 
