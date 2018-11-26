@@ -1,0 +1,15 @@
+---
+- hosts: all
+  tasks:
+    - name: Create Job Folder
+      file: path=./permute state=directory
+    - name: Copy Scripts
+      copy:
+        src: ../scripts/
+        dest: ./permute
+    - name: Copy Permutation String
+      copy:
+        src: ../tmp/{{ ansible_host }}
+        dest: ./permute/string
+    - name: Execute Job
+      shell: ./permute/run

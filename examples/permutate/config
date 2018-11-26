@@ -1,0 +1,5 @@
+NODES=2
+STRING=abcdefghijk
+HOSTS=all
+PREFIX=node
+TMP=/tmp/derp
