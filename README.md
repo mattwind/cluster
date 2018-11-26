@@ -15,7 +15,11 @@ Add dhcp address to ssh config.
 
 `vi ~/.ssh/config`
 
-Update your ansible inventory and run playbook.
+Update your ansible inventory with node dhcp address.
+
+`vi /etc/ansible/hosts`
+
+Setup the new node by running the ansible playbook.
 
 `ansible-playbook --limit "node1" playbooks/setup_node.yml --extra-vars "new_ip=172.16.0.200" --ask-become-pass`
 
