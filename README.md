@@ -17,7 +17,7 @@ Add dhcp address to ssh config.
 
 Update your ansible inventory with node name and run playbook.
 
-`ansible-playbook --limit "node1" playbooks/setup_node.yml --extra-vars "new_ip=172.16.0.200" --ask-become-pass`
+`ansible-playbook --limit "node00" playbooks/setup_node.yml --extra-vars "new_ip=172.16.0.200" --ask-become-pass`
 
 Update local `~/.ssh/config` to new static ip address. 
 
@@ -31,5 +31,5 @@ Ocassionaly you want to update your nodes
 
 To run the command uptime on remote nodes you can do:
 
-`parallel --tag --nonall -S node1,node2 uptime`
+`parallel --tag --nonall -S node00,node01 uptime`
 
