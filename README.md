@@ -1,8 +1,7 @@
 
-# Automate Parallel Nodes
+# Compute Cluster
 
-My notes on setting up a network with ansible for parallel computing. I use Debian locally and setup a bunch of Centos 7.5 nodes.
-After I build an new node and install the base system, I get a dhcp address then I run a playbook from my local machine using Ansible.
+My notes on automating node setup for parallel computing cluster. I use ansible for distribution and deployment. After I build an new node and install the base system, I get a dhcp address then I run a playbook from my local machine.
 
 View the docs folder for more information on setting up ansible and ssh keys.
 
