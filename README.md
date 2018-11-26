@@ -1,9 +1,9 @@
 
 # Compute Cluster
 
-My notes on automating node setup for parallel computing cluster. I use ansible for distribution and deployment. After I build an new node and install the base system, I get a dhcp address then I run a playbook from my local machine.
+My notes on automating node setup for parallel computing. I use ansible for distribution, after I build an new node and install the base system, I get a dhcp address then I run a playbook from my local machine. Easy.
 
-View the docs folder for more information on setting up ansible and ssh keys.
+View the docs folder for more information on setting up ansible, setting up ssh keys and parallels.
 
 ## Setup New Node
 
