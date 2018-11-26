@@ -28,3 +28,9 @@ Ocassionaly you want to update your nodes
 
 `ansible-playbook playbooks/update_nodes.yml --ask-become-pass`
 
+## Running Parallel
+
+To run the command uptime on remote computesr you can do:
+
+`parallel --tag --nonall -S node1,node2 uptime`
+
