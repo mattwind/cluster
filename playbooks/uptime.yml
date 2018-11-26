@@ -1,7 +1,0 @@
----
-- hosts: all
-  tasks:
-    - name: Test Playbook
-      shell: uptime
-      register: uptime_out
-    - debug: var=uptime_out.stdout
