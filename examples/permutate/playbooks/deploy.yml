@@ -11,5 +11,9 @@
       copy:
         src: ../tmp/{{ ansible_host }}
         dest: ./permute/string
+    - name: Change Permissions
+      file:
+        path: ./permute/run
+        mode: "u+x"
     - name: Execute Job
       shell: ./permute/run

@@ -3,3 +3,5 @@
 WORK=~/permute
 
 awk -f $WORK/permute.awk $WORK/string > $WORK/out
+
+. $WORK/md5

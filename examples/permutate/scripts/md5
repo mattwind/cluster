@@ -1,0 +1,7 @@
+#!/bin/bash
+
+WORK=~/permute
+
+while read -r line; do
+  echo $line | md5sum | cut -d ' ' -f 1 >> $WORK/out.md5
+done < $WORK/out
