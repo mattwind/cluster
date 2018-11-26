@@ -1,6 +1,6 @@
 # Permutations
 
-This example will split the work over all nodes and iterate through all possible permutations of a given string.
+This example will split the work over all nodes and iterate through all possible permutations of a given string. You can then use parallel command to find hashes.
 
 ## Config File
 
