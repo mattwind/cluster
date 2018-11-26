@@ -29,7 +29,7 @@ Ocassionaly you want to update your nodes
 
 ## Running Parallel
 
-To run the command uptime on remote computesr you can do:
+To run the command uptime on remote nodes you can do:
 
 `parallel --tag --nonall -S node1,node2 uptime`
 
