@@ -1,0 +1,9 @@
+---
+- hosts: all
+  tasks:
+    - name: System Update
+      become: yes
+      become_method: sudo
+      yum:
+        name: '*'
+        state: latest
