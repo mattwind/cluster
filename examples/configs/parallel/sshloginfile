@@ -1,2 +1,9 @@
+# This is the default parallel 'ssh login' file.
+#
+# It should live in ~/.parallel/sshloginfile
+#
+#   - Comments begin with the '#' character
+#   - Blank lines are ignored
+
 node00
 node01
