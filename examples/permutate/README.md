@@ -16,7 +16,7 @@ I use bash to do the dirty work and ansible to deploy and execute the job.
 
 After the jobs are finished it will generate segmented permutation file per node. We can use parallel to search all the nodes.
 
-`parallel --progress --tag -S .. --nonall "grep -nw kghij /home/admin/permute/out"`
+`parallel --progress --tag -S .. --nonall "grep -nw kghij ~/permute/out"`
 
 The results found `node01  120:kghij`
 
