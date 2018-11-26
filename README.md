@@ -26,5 +26,5 @@ Update local `~/.ssh/config` to new static ip address.
 
 Ocassionaly you want to update your nodes
 
-`ansible-playbook playbooks/update_system.yml --ask-become-pass`
+`ansible-playbook playbooks/update_nodes.yml --ask-become-pass`
 
