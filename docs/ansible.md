@@ -50,6 +50,10 @@ Reboot
 
 `ansible all -m shell -a 'reboot' --ask-become-pass --become`
 
+Get motherboard information
+
+`ansible all -m shell -a 'dmidecode --type baseboard | grep -A3 Manufacturer' --ask-become-pass --become`
+
 ## Resources
 
 * https://docs.ansible.com
