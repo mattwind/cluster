@@ -32,9 +32,23 @@ Limit host
 
 ## Ansible Ad-Hoc Command
 
+Check uptime
+
 `ansible all -m shell -a 'uptime'`
 
+Ping nodes
+
 `ansible all -m ping`
+
+## Ansible Ad-Hock Sudo command
+
+Cleanup old kerenels
+
+`ansible all -m shell -a 'package-cleanup -y --oldkernels --count=1' --ask-become-pass --become`
+
+Reboot
+
+`ansible all -m shell -a 'reboot' --ask-become-pass --become`
 
 ## Resources
 

@@ -9,3 +9,4 @@
       - htop
       - parallel
       - bzip2
+      - yum-utils
